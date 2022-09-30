@@ -32,13 +32,13 @@ a{
     color:black;
     font-weight: 500;
 }
-#navbar-a{
+#logo{
+    width:12%;
+}
+#logo+div{
     width:70%;
     display:flex;
     justify-content:space-around;
-}
-#logo{
-    width:12%;
 }
 #navbar-right{
     width:30%;
@@ -46,6 +46,7 @@ a{
     display:flex;
     justify-content:space-evenly;
     align-items:center;
+    margin-right:20px;
 }
 #search-bar{
     background-color:#EAEAEA;
@@ -88,7 +89,128 @@ a{
     margin: auto;
     text-align: center;
 }
-#banner>img{
+#banner>a>img{
     width:100%;
 }
+#SailWithBoAt,#ShopbyCategory,#BestofboAt{
+    width:95%;
+    margin:auto;
+    margin-top:50px;
+}
+#container{
+    display:flex;
+    justify-content:space-between;
+}
+#container>a{
+    border-radius:10px;
+    background-color:#e3e3e3;
+    width:19%;
+}
+#container img{
+    width:100%;
+}
+.super-saver{
+    background-color:#fcc50b;
+    font-size:12px;
+    font-weight:700;
+    padding:4px;
+    position: relative;
+    top:10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.product-info{
+    text-align:left;
+    background-color:white;
+    padding:5px 12px 10px;
+    margin:-10px 5px 5px 5px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    flex-grow:1;
+}
+.product-info h4{
+    margin-top:5px;
+    margin-bottom:10px;
+    font-size:15px;
+}
+.product-info h4+span{
+    font-size:12px;
+    border:1px solid grey;
+    padding-bottom:10px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.product-info button{
+    background-color:#f7c20a;
+    border:1px solid #f7c20a;
+    border-radius:5px;
+    line-height:normal;
+    padding:8px 12px;
+    color:white;
+    text-align:center;
+    width:100%;
+    font-size:15px;
+    font-weight:700;
+    margin-top:10px;
+    cursor:pointer;
+}
+.price{
+    font-size:15px;
+    margin-top:10px;
+}
+.price+span{
+    font-size:12px;
+    margin-top:5px;
+}
+.current-price{
+    color:#FF0000;
+    font-weight:700;
+}
+.mrp{
+    color:#616161;
+}
+#grid{
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows:repeat(2,1fr);
+    row-gap:90px;
+    font-size:11px;
+    font-weight:900;
+    margin-top:50px;
+}
+#grid img{
+    width:74px;
+}
+#grid>a{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#grid b{
+    text-align:center;
+}
+#category-flex{
+    display:flex;
+    justify-content:space-between;
+    width:70%;
+    font-size:18px;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+#category-flex>a{
+    color:#6a6868;
+}
+.ViewAll{
+    display:flex;
+    flex-direction:row-reverse;
+    margin-bottom:5px;
+}
+u{
+    text-decoration:1px underline;
+}
+
 
