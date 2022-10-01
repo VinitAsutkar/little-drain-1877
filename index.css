@@ -3,6 +3,16 @@ body{
     margin:0px;
     padding:0px;
 }
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#888;
+    border-radius:8px;
+}
+::-webkit-scrollbar-track{
+    background-color:#f1f1f1;
+}
 #announcement-bar{
     background-color:black;
     text-align:center;
@@ -92,7 +102,7 @@ a{
 #banner>a>img{
     width:100%;
 }
-#SailWithBoAt,#ShopbyCategory,#BestofboAt{
+#SailWithBoAt,#ShopbyCategory,#BestofboAt,#Catch-em-All,#boatfeaturedblogs{
     width:95%;
     margin:auto;
     margin-top:50px;
@@ -212,5 +222,160 @@ a{
 u{
     text-decoration:1px underline;
 }
-
+#video-card-container{
+    background-color:#f7f7f7;
+    margin-top:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#video-card-widget{
+    display:flex;
+    justify-content:center;
+    width:95%;
+    margin:auto;
+}
+#video-card-layer{
+    margin:0;
+    padding:0 10px;
+    scroll-padding:0 10px;
+    display:flex !important;
+    flex-wrap:nowrap;
+    overflow:auto;
+    position:relative;
+    scroll-snap-type:x mandatory;
+}
+.video-card{
+    display:block;
+    border-radius:5px;
+    overflow:hidden;
+    box-shadow:1px 1px 5px 1px rgb(0 0 0 / 30%);
+    margin:6px 0;
+    scroll-snap-align:start;
+    cursor:pointer;
+    flex-shrink:0;
+    height:530px !important;
+    width:240px !important;
+    position:relative;
+    background-color:white;
+    margin-right:20px;
+}
+.video{
+    object-fit:cover;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.product-image{
+    width:44px;
+    height:44px;
+    border-radius:5px;
+    box-shadow:0 0 2px 0 #918c8c;
+    background-color:white;
+    object-fit:cover;
+    z-index:3;
+    left:98px;
+    top:370px;
+    position:absolute;
+}
+.video-card-title{
+    text-align:center;
+    font-weight:700;
+    font-size:14px;
+    padding-left:0 5px;
+    width:100%;
+    overflow:hidden;
+    z-index:1;
+    left:0;
+    top:419px;
+    position:absolute;
+}
+.video-card-price{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:center;
+    align-items:center;
+    gap:7px;
+    width:100%;
+    z-index:1;
+    left:0;
+    top:472px;
+    position:absolute;
+}
+.video-card-original-price{
+    text-decoration:line-through;
+    margin:0;
+    display:block;
+}
+.video-card-discounted-price{
+    font-weight:700;
+    color:red;
+}
+#category-flex-1{
+    display:flex;
+    justify-content:space-between;
+    width:40%;
+    font-size:18px;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+#category-flex-1>a{
+    color:#6a6868;
+}
+.exclusive{
+    background-color:white;
+    color:red;
+    font-size:12px;
+    font-weight:700;
+    padding:4px;
+    position: relative;
+    top:10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.product-info-1{
+    text-align:left;
+    background-color:white;
+    padding:5px 12px 10px;
+    margin:-10px 5px 5px 5px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    flex-grow:1;
+}
+.product-info-1 h4{
+    margin-top:5px;
+    margin-bottom:10px;
+    font-size:15px;
+}
+.product-info-1 h4+span{
+    font-size:12px;
+    border:1px solid grey;
+    padding-bottom:10px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+.product-info-1 button{
+    background-color:red;
+    border:1px solid red;
+    border-radius:5px;
+    line-height:normal;
+    padding:8px 12px;
+    color:white;
+    text-align:center;
+    width:100%;
+    font-size:15px;
+    font-weight:700;
+    margin-top:10px;
+    cursor:pointer;
+}
+#boatfeaturedblogs{
+    background-color:black;
+    padding:32px 40px 40px;
+}
 
