@@ -102,7 +102,7 @@ a{
 #banner>a>img{
     width:100%;
 }
-#SailWithBoAt,#ShopbyCategory,#BestofboAt,#Catch-em-All,#boatfeaturedblogs{
+#SailWithBoAt,#ShopbyCategory,#BestofboAt,#Catch-em-All,#blogs,#media{
     width:95%;
     margin:auto;
     margin-top:50px;
@@ -224,7 +224,7 @@ u{
 }
 #video-card-container{
     background-color:#f7f7f7;
-    margin-top:30px;
+    margin-top:60px;
     padding-top:20px;
     padding-bottom:20px;
     width:100%;
@@ -376,6 +376,75 @@ u{
 }
 #boatfeaturedblogs{
     background-color:black;
+    color:white;
     padding:32px 40px 40px;
+    height:290px;
 }
-
+#blog-heading{
+    margin-bottom:0 !important;
+    display:flex;
+    justify-content:space-between !important;
+}
+#h3{
+    font-size:18px;
+    font-weight:700;
+    margin-top:0 !important;
+    margin-bottom:16px;
+    letter-spacing:-1px;
+}
+#red-text{
+    color:red;
+}
+.a{
+    color:inherit;
+    text-decoration:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+#article-list{
+    display:flex;
+}
+.article{
+    width:100%;
+    padding:10px !important;
+    text-align:center;
+}
+.article-image{
+    border-radius:10px;
+    width:100%;
+    margin:0;
+}
+.article-heading{
+    color:white;
+}
+.article-heading:hover{
+    color:red;
+}
+#media-list{
+    display:flex;
+    width:90%;
+    margin:auto;
+    justify-content:space-between;
+    margin-top:100px;
+}
+.press-logo{
+    background-color:#E9E9E9;
+    padding:10px;
+    cursor:pointer;
+    border-radius:5px !important;
+    border:none;
+}
+#brand-text{
+    background-color:black;
+    padding:20px 20px;
+    margin-top:50px;
+    margin-bottom:24px !important;
+}
+#brand-content{
+    line-height:normal;
+    font-size:14px;
+    max-width:931px;
+    margin:0 auto;
+    color:white;
+    text-align:center;
+}
